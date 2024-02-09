@@ -21,5 +21,9 @@ export const options: NextAuthOptions = {
 				return null
 			}
 		})
-	]
+	],
+  secret: process.env.NEXTAUTH_SECRET,
+  session: {
+    maxAge: 60 * 60 * 1 // 1 hora
+  }
 }
