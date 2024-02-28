@@ -2,7 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import NavBar from './components/NavBar'
-import AuthProvider from './context/AuthProvider'
+import AuthProvider from '@/context/AuthProvider'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,12 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <AuthProvider>
-      <body className={inter.className}>
-        <NavBar />
-        <main className='flex min-h-screen items-start justify-center'>
-          {children}
-        </main>
-      </body>
+        <body className={inter.className}>
+          <NavBar />
+          <main className="flex min-h-screen items-start justify-center">
+            {children}
+          </main>
+        </body>
       </AuthProvider>
     </html>
   )

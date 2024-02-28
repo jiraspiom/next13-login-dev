@@ -1,7 +1,7 @@
 export default function Outra() {
-	return (
-		<>
-			<h1>Outra pagina</h1>
-		</>
-	)
+  return (
+    <>
+      <h1>Outra pagina</h1>
+    </>
+  )
 }
